@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	etc/connman/
 -rw-r--r--	root/root	etc/connman/main.conf
 drwxr-xr-x	root/root	etc/dbus-1/
 -rw-r--r--	root/root	etc/dbus-1/session.conf
+drwxr-xr-x	root/root	etc/dbus-1/session.d/
 -rw-r--r--	root/root	etc/dbus-1/system.conf
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/connman.conf
@@ -1968,8 +1969,6 @@ lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/dbus-monitor
 -rwxr-xr-x	root/root	usr/bin/dbus-run-session
 -rwxr-xr-x	root/root	usr/bin/dbus-send
--rwxr-xr-x	root/root	usr/bin/dbus-test-tool
--rwxr-xr-x	root/root	usr/bin/dbus-update-activation-environment
 -rwxr-xr-x	root/root	usr/bin/dbus-uuidgen
 -rwxr-xr-x	root/root	usr/bin/dd
 -rwxr-xr-x	root/root	usr/bin/deallocvt
@@ -2782,9 +2781,9 @@ lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libc.so
 lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so.5.9
--rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.14.1
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.14.1
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.14.1
+-rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.8.13
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.8.13
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.8.13
 lrwxrwxrwx	root/root	usr/lib/libdl.so -> ../../lib/libdl.so.2
 -rwxr-xr-x	root/root	usr/lib/libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so.1 -> libexpat.so.1.6.0
@@ -3969,10 +3968,6 @@ drwxr-xr-x	root/root	usr/share/common-lisp/source/gpg-error/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 lrwxrwxrwx	root/root	usr/share/dbus-1/services/org.freedesktop.systemd1.service -> ../system-services/org.freedesktop.systemd1.service
--rw-r--r--	root/root	usr/share/dbus-1/session.conf
-drwxr-xr-x	root/root	usr/share/dbus-1/session.d/
--rw-r--r--	root/root	usr/share/dbus-1/system.conf
-drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/fi.epitest.hostap.WPASupplicant.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/fi.w1.wpa_supplicant1.service
@@ -5373,7 +5368,6 @@ lrwxrwxrwx	root/root	usr/share/man/man2/lsetxattr.2.gz -> setxattr.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/removexattr.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/setxattr.2.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
-lrwxrwxrwx	root/root	usr/share/man/man3/.3ssl -> SSL_CTX_use_serverinfo.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/acl_add_perm.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/acl_calc_mask.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/acl_check.3.gz
@@ -8490,6 +8484,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_clear_options.3ssl -> SSL_CTX_se
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_flush_sessions.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_free.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get0_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_get0_param.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get_cert_store.3ssl -> SSL_CTX_set_cert_store.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get_client_CA_list.3ssl -> SSL_get_client_CA_list.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_get_client_cert_cb.3ssl -> SSL_CTX_set_client_cert_cb.3ssl
@@ -8540,6 +8535,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_chain.3ssl -> SSL_CTX_add1_
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_chain_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_curves_list.3ssl -> SSL_CTX_set1_curves.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_set1_param.3ssl -> SSL_CTX_get0_param.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set1_verify_cert_store.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_cb.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_set_cert_store.3ssl
@@ -8588,6 +8584,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_RSAPrivateKey.3ssl -> SSL_CT
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_RSAPrivateKey_ASN1.3ssl -> SSL_CTX_use_certificate.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_RSAPrivateKey_file.3ssl -> SSL_CTX_use_certificate.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_use_serverinfo.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_use_serverinfo_file.3ssl -> SSL_CTX_use_serverinfo.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_do_handshake.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay.3ssl -> OPENSSL_VERSION_NUMBER.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay_add_ssl_algorithms.3ssl -> SSL_library_init.3ssl
@@ -8595,6 +8592,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSLeay_version.3ssl -> OPENSSL_VERSION_N
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_flush_sessions.3ssl -> SSL_CTX_flush_sessions.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_free.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get0_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get0_param.3ssl -> SSL_CTX_get0_param.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get1_curves.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_accept_state.3ssl -> SSL_set_connect_state.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_cipher.3ssl -> SSL_get_current_cipher.3ssl
@@ -8662,6 +8660,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_chain.3ssl -> SSL_CTX_add1_chai
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_chain_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_curves.3ssl -> SSL_CTX_set1_curves.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_curves_list.3ssl -> SSL_CTX_set1_curves.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_param.3ssl -> SSL_CTX_get0_param.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set1_verify_cert_store.3ssl -> SSL_CTX_set1_verify_cert_store.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_set_bio.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_cert_cb.3ssl -> SSL_CTX_set_cert_cb.3ssl
