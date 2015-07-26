@@ -1308,6 +1308,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CIPHER_get_version.3ssl -> SSL_CIPHE
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_clear_chain_certs.3ssl -> SSL_CTX_add1_chain_cert.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_clear_options.3ssl -> SSL_CTX_set_options.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_COMP_add_compression_method.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_COMP_free_compression_methods.3ssl -> SSL_COMP_add_compression_method.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_cmd.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CONF_cmd_argv.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CONF_CTX_clear_flags.3ssl -> SSL_CONF_CTX_set_flags.3ssl

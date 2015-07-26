@@ -1,0 +1,20 @@
+# Description: U-boot - The universal bootloader
+# URL: http://www.denx.de/wiki/U-Boot
+# License: GPLv2
+
+name=u-boot
+version=2015.07
+release=1
+source=(ftp://ftp.denx.de/pub/$name/$name-$version.tar.bz2)
+
+build()
+{
+    cd $name-$version
+
+    make ARCH=arm CROSS_COMPILE=$HOST- rpi_2_defconfig
+    make -j $JOBS ARCH=arm CROSS_COMPILE=$HOST-
+
+    mkdir -p $OUTPUT/boot
+    cp u-boot.bin $OUTPUT/boot
+    echo "kernel=u-boot.bin" > $OUTPUT/boot/config.txt
+}

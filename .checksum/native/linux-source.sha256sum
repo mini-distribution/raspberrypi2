@@ -1,3 +1,2 @@
-2b042ccec755fb823a52e2833589be1ab71b1e4c5d3a1c431c77e28c6362892d  0001-ARM-Avoid-crash-on-power-off-and-reduce-power-consum.patch
-5398f77591687e6dc0f962204a30438b57652976d7e0e192f79c26838b758ada  0002-ARM-Disable-timer-events-before-entering-halt-state.patch
-d3d7026087fc153510804a8040daae606306f8f14fb89ebfa0ab542c2a13c5a5  solidrun-linux-imx6-3.14-gite85332f.tar.xz
+46419f366f5c7edf6620c8aec66dfcdc27e44ff50502548c021c04773c5084ac  linux-4.1.3-rpi-patches.tar.xz
+96dd2c30984408a8a2211463618c3564514239f1e4335f6bc461c4b9a9bae30b  linux-4.1.3.tar.xz
