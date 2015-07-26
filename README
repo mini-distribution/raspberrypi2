@@ -29,6 +29,7 @@ Quick build guide:
    $ cd raspberrypi2
    $ buildgear build fs
    $ buildgear build u-boot
+   $ buildgear build rpi-firmware-boot
 
 Prebuilt images:
     To be done.
