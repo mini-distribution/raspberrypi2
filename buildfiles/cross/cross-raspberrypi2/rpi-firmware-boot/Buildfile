@@ -5,8 +5,8 @@
 name=rpi-firmware-boot
 version=git464ce4fc
 release=1
-source=(http://mirror.mini-distribution.io/raspberrypi/$name-$version.tar.xz)
-depends=zlib
+source=(http://mirror.mini-distribution.io/raspberrypi/$name-$version.tar.xz
+        cmdline.txt config.txt)
 
 build() {
     cd $name-$version
@@ -14,4 +14,6 @@ build() {
     mkdir -p $OUTPUT/boot
     cp bootcode.bin $OUTPUT/boot
     cp start.elf $OUTPUT/boot
+    cp $SRC/config.txt $OUTPUT/boot
+    cp $SRC/cmdline.txt $OUTPUT/boot
 }
