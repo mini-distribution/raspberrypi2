@@ -19,16 +19,15 @@ Main features:
 
 Main builds:
 
-   fs      - Filesystem
-   linux   - Linux kernel
-   u-boot  - Bootloader
+   fs                - Filesystem
+   linux             - Linux kernel
+   rpi-firmware-boot - Bootloader firmware
 
 Quick build guide:
 
    $ git clone --recursive git://github.com/mini-distribution/raspberrypi2.git
    $ cd raspberrypi2
    $ buildgear build fs
-   $ buildgear build u-boot
    $ buildgear build rpi-firmware-boot
 
 Prebuilt images:
