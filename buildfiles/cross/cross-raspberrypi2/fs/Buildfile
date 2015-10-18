@@ -23,6 +23,9 @@ build() {
    # Set login issue
    echo -e "Raspberry Pi 2 Mini Distribution $version\n" > $PKG/etc/issue
 
+   # Allow SSH root login
+   sed -i "s/#PermitRootLogin prohibit-password/PermitRootLogin yes/g" $PKG/etc/ssh/sshd_config
+
    # Cleanup
    cd $PKG/usr/include; rm -rf !(python|python?.?)
    find $PKG/usr/lib -name '*.a'    -delete -o \
