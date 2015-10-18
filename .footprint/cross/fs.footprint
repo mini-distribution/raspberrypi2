@@ -6,7 +6,6 @@ drwxr-xr-x	root/root	etc/connman/
 -rw-r--r--	root/root	etc/connman/main.conf
 drwxr-xr-x	root/root	etc/dbus-1/
 -rw-r--r--	root/root	etc/dbus-1/session.conf
-drwxr-xr-x	root/root	etc/dbus-1/session.d/
 -rw-r--r--	root/root	etc/dbus-1/system.conf
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/connman.conf
@@ -1968,6 +1967,8 @@ lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
 -rwxr-xr-x	root/root	usr/bin/dbus-monitor
 -rwxr-xr-x	root/root	usr/bin/dbus-run-session
 -rwxr-xr-x	root/root	usr/bin/dbus-send
+-rwxr-xr-x	root/root	usr/bin/dbus-test-tool
+-rwxr-xr-x	root/root	usr/bin/dbus-update-activation-environment
 -rwxr-xr-x	root/root	usr/bin/dbus-uuidgen
 -rwxr-xr-x	root/root	usr/bin/dd
 -rwxr-xr-x	root/root	usr/bin/deallocvt
@@ -2007,8 +2008,8 @@ lrwxrwxrwx	root/root	usr/bin/ex -> vim
 -rwxr-xr-x	root/root	usr/bin/free
 -rwxr-xr-x	root/root	usr/bin/fuser
 -rwxr-xr-x	root/root	usr/bin/gapplication
--rwxr-xr-x	root/root	usr/bin/gawk
-hrwxr-xr-x	root/root	usr/bin/gawk-4.1.2 link to usr/bin/gawk
+-rwxr-xr-x	root/root	usr/bin/gawk-4.1.3
+hrwxr-xr-x	root/root	usr/bin/gawk link to usr/bin/gawk-4.1.3
 -rwxr-xr-x	root/root	usr/bin/gdbm_dump
 -rwxr-xr-x	root/root	usr/bin/gdbm_load
 -rwxr-xr-x	root/root	usr/bin/gdbmtool
@@ -2160,7 +2161,7 @@ lrwxrwxrwx	root/root	usr/bin/modprobe -> /usr/bin/kmod
 -rwxr-xr-x	root/root	usr/bin/mv
 -rwxr-xr-x	root/root	usr/bin/namei
 -rwxr-xr-x	root/root	usr/bin/nano
--rwxr-xr-x	root/root	usr/bin/ncurses5-config
+-rwxr-xr-x	root/root	usr/bin/ncurses6-config
 -rwxr-xr-x	root/root	usr/bin/neqn
 -rwxr-xr-x	root/root	usr/bin/netstat
 -rwxr-xr-x	root/root	usr/bin/nettle-hash
@@ -2779,10 +2780,10 @@ lrwxrwxrwx	root/root	usr/lib/libcidn.so -> ../../lib/libcidn.so.1
 lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libc.so
-lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so.5.9
--rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.8.13
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.8.13
-lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.8.13
+lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so.6.0
+-rwxr-xr-x	root/root	usr/lib/libdbus-1.so.3.14.3
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so.3 -> libdbus-1.so.3.14.3
+lrwxrwxrwx	root/root	usr/lib/libdbus-1.so -> libdbus-1.so.3.14.3
 lrwxrwxrwx	root/root	usr/lib/libdl.so -> ../../lib/libdl.so.2
 -rwxr-xr-x	root/root	usr/lib/libexpat.so.1.6.0
 lrwxrwxrwx	root/root	usr/lib/libexpat.so.1 -> libexpat.so.1.6.0
@@ -2797,9 +2798,9 @@ drwxr-xr-x	root/root	usr/lib/libffi-3.2.1/include/
 -rwxr-xr-x	root/root	usr/lib/libffi.so.6.0.4
 lrwxrwxrwx	root/root	usr/lib/libffi.so.6 -> libffi.so.6.0.4
 lrwxrwxrwx	root/root	usr/lib/libffi.so -> libffi.so.6.0.4
--rwxr-xr-x	root/root	usr/lib/libform.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libform.so.5 -> libform.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.5
+-rwxr-xr-x	root/root	usr/lib/libform.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libform.so.6 -> libform.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libform.so -> libform.so.6
 -rwxr-xr-x	root/root	usr/lib/libgcrypt.so.20.0.3
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so.20 -> libgcrypt.so.20.0.3
 lrwxrwxrwx	root/root	usr/lib/libgcrypt.so -> libgcrypt.so.20.0.3
@@ -2809,36 +2810,36 @@ lrwxrwxrwx	root/root	usr/lib/libgdbm_compat.so -> libgdbm_compat.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so.4 -> libgdbm.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgdbm.so -> libgdbm.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4400.1
--rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4400.1
--rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4400.1
+-rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4600.0
+-rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4600.0
+-rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4600.0
 -rwxr-xr-x	root/root	usr/lib/libgmp.so.10.2.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so.10 -> libgmp.so.10.2.0
 lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.10.2.0
 -rwxr-xr-x	root/root	usr/lib/libgmpxx.so.4.4.0
 lrwxrwxrwx	root/root	usr/lib/libgmpxx.so.4 -> libgmpxx.so.4.4.0
 lrwxrwxrwx	root/root	usr/lib/libgmpxx.so -> libgmpxx.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.2.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.2.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.2.0
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.3.0
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.3.0
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.3.0
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so -> libgnutlsxx.so.28.1.0
--rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4400.1
--rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.15.0
-lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.15.0
-lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.15.0
--rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4400.1
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4400.1
+-rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4600.0
+-rwxr-xr-x	root/root	usr/lib/libgpg-error.so.0.16.0
+lrwxrwxrwx	root/root	usr/lib/libgpg-error.so.0 -> libgpg-error.so.0.16.0
+lrwxrwxrwx	root/root	usr/lib/libgpg-error.so -> libgpg-error.so.0.16.0
+-rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4600.0
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4600.0
 -r-xr-xr-x	root/root	usr/lib/libhistory.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libhistory.so.6 -> libhistory.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libhistory.so -> libhistory.so.6
@@ -2857,22 +2858,22 @@ lrwxrwxrwx	root/root	usr/lib/libipq.so -> libipq.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libiptc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so.0 -> libiptc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so -> libiptc.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.10
-lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.10
-lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.10
+-rwxr-xr-x	root/root	usr/lib/libkmod.so.2.2.11
+lrwxrwxrwx	root/root	usr/lib/libkmod.so.2 -> libkmod.so.2.2.11
+lrwxrwxrwx	root/root	usr/lib/libkmod.so -> libkmod.so.2.2.11
 -rwxr-xr-x	root/root	usr/lib/liblzma.so.5.2.1
 lrwxrwxrwx	root/root	usr/lib/liblzma.so.5 -> liblzma.so.5.2.1
 lrwxrwxrwx	root/root	usr/lib/liblzma.so -> liblzma.so.5.2.1
--rwxr-xr-x	root/root	usr/lib/libmenu.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libmenu.so.5 -> libmenu.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.5
+-rwxr-xr-x	root/root	usr/lib/libmenu.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libmenu.so.6 -> libmenu.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libmenu.so -> libmenu.so.6
 -rwxr-xr-x	root/root	usr/lib/libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libmount.so.1 -> libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libmount.so -> libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libm.so -> ../../lib/libm.so.6
--rwxr-xr-x	root/root	usr/lib/libncurses.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libncurses.so.5 -> libncurses.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libncurses.so -> libncurses.so.5
+-rwxr-xr-x	root/root	usr/lib/libncurses.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libncurses.so.6 -> libncurses.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libncurses.so -> libncurses.so.6
 -rw-r--r--	root/root	usr/lib/libnettle.so.6.1
 lrwxrwxrwx	root/root	usr/lib/libnettle.so.6 -> libnettle.so.6.1
 lrwxrwxrwx	root/root	usr/lib/libnettle.so -> libnettle.so.6.1
@@ -2918,9 +2919,9 @@ lrwxrwxrwx	root/root	usr/lib/libnss_hesiod.so -> ../../lib/libnss_hesiod.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nisplus.so -> ../../lib/libnss_nisplus.so.2
 lrwxrwxrwx	root/root	usr/lib/libnss_nis.so -> ../../lib/libnss_nis.so.2
 -rwxr-xr-x	root/root	usr/lib/libnss_resolve.so.2
--rwxr-xr-x	root/root	usr/lib/libpanel.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libpanel.so.5 -> libpanel.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.5
+-rwxr-xr-x	root/root	usr/lib/libpanel.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libpanel.so.6 -> libpanel.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libpanel.so -> libpanel.so.6
 -rw-r--r--	root/root	usr/lib/libpci.so.3.3.1
 -rwxr-xr-x	root/root	usr/lib/libpcre16.so.0.2.5
 lrwxrwxrwx	root/root	usr/lib/libpcre16.so.0 -> libpcre16.so.0.2.5
@@ -2937,12 +2938,12 @@ lrwxrwxrwx	root/root	usr/lib/libpcreposix.so -> libpcreposix.so.0.0.3
 -rwxr-xr-x	root/root	usr/lib/libpcre.so.1.2.5
 lrwxrwxrwx	root/root	usr/lib/libpcre.so.1 -> libpcre.so.1.2.5
 lrwxrwxrwx	root/root	usr/lib/libpcre.so -> libpcre.so.1.2.5
--rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.0
-lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.0
-lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.0
--rwxr-xr-x	root/root	usr/lib/libprocps.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libprocps.so.4 -> libprocps.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libprocps.so -> libprocps.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libpipeline.so.1.4.1
+lrwxrwxrwx	root/root	usr/lib/libpipeline.so.1 -> libpipeline.so.1.4.1
+lrwxrwxrwx	root/root	usr/lib/libpipeline.so -> libpipeline.so.1.4.1
+-rwxr-xr-x	root/root	usr/lib/libprocps.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libprocps.so.5 -> libprocps.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libprocps.so -> libprocps.so.5.0.0
 -rw-r--r--	root/root	usr/lib/libpthread.so
 -r-xr-xr-x	root/root	usr/lib/libreadline.so.6.3
 lrwxrwxrwx	root/root	usr/lib/libreadline.so.6 -> libreadline.so.6.3
@@ -2969,13 +2970,13 @@ lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.11
 -rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.9.3
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.9.3
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.9.3
--rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.10.0
-lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.10.0
-lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0.10.0
+-rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.10.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.10.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0.10.2
 lrwxrwxrwx	root/root	usr/lib/libthread_db.so -> ../../lib/libthread_db.so.1
--rwxr-xr-x	root/root	usr/lib/libtinfo.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libtinfo.so.5 -> libtinfo.so.5.9
-lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.5
+-rwxr-xr-x	root/root	usr/lib/libtinfo.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so.6 -> libtinfo.so.6.0
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.6
 -rwxr-xr-x	root/root	usr/lib/libudev.so.1.6.4
 lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.6.4
 lrwxrwxrwx	root/root	usr/lib/libudev.so -> libudev.so.1.6.4
@@ -2996,10 +2997,10 @@ lrwxrwxrwx	root/root	usr/lib/libxtables.so -> libxtables.so.10.0.0
 lrwxrwxrwx	root/root	usr/lib/libz.so.1 -> libz.so.1.2.8
 lrwxrwxrwx	root/root	usr/lib/libz.so -> libz.so.1.2.8
 drwxr-xr-x	root/root	usr/lib/man-db/
--rwxr-xr-x	root/root	usr/lib/man-db/libman-2.7.1.so
--rwxr-xr-x	root/root	usr/lib/man-db/libmandb-2.7.1.so
-lrwxrwxrwx	root/root	usr/lib/man-db/libmandb.so -> libmandb-2.7.1.so
-lrwxrwxrwx	root/root	usr/lib/man-db/libman.so -> libman-2.7.1.so
+-rwxr-xr-x	root/root	usr/lib/man-db/libman-2.7.2.so
+-rwxr-xr-x	root/root	usr/lib/man-db/libmandb-2.7.2.so
+lrwxrwxrwx	root/root	usr/lib/man-db/libmandb.so -> libmandb-2.7.2.so
+lrwxrwxrwx	root/root	usr/lib/man-db/libman.so -> libman-2.7.2.so
 drwxr-xr-x	root/root	usr/lib/man-db/man-db/
 -rwxr-xr-x	root/root	usr/lib/man-db/man-db/globbing
 -rwxr-xr-x	root/root	usr/lib/man-db/man-db/manconv
@@ -3984,6 +3985,10 @@ drwxr-xr-x	root/root	usr/share/common-lisp/source/gpg-error/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 lrwxrwxrwx	root/root	usr/share/dbus-1/services/org.freedesktop.systemd1.service -> ../system-services/org.freedesktop.systemd1.service
+-rw-r--r--	root/root	usr/share/dbus-1/session.conf
+drwxr-xr-x	root/root	usr/share/dbus-1/session.d/
+-rw-r--r--	root/root	usr/share/dbus-1/system.conf
+drwxr-xr-x	root/root	usr/share/dbus-1/system.d/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/fi.epitest.hostap.WPASupplicant.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/fi.w1.wpa_supplicant1.service
@@ -4456,6 +4461,478 @@ drwxr-xr-x	root/root	usr/share/groff/site-font/
 drwxr-xr-x	root/root	usr/share/groff/site-tmac/
 -rw-r--r--	root/root	usr/share/groff/site-tmac/man.local
 -rw-r--r--	root/root	usr/share/groff/site-tmac/mdoc.local
+drwxr-xr-x	root/root	usr/share/gtk-doc/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/gio/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/annotation-glossary.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-18.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-20.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-22.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-24.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-26.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-28.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-30.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-32.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-34.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-36.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-38.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-40.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-42.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-44.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-46.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-deprecated.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-full.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/application.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/async.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch32.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch33.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch33s02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch33s03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch34.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch34s02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch34s03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch34s04.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch34s05.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch34s06.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch34s07.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch35.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch35s02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch35s03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch35s04.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ch35s05.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/conversion.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/data-models.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ExampleAnimal.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ExampleCat.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ExampleObject.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/ExampleObjectManagerClient.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/extending-gio.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/extending.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/failable_initialization.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/file_mon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/file_ops.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GActionGroup.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GAction.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GActionMap.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GAppInfo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GAppInfoMonitor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GApplicationCommandLine.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GApplication.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gapplication-tool.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GAsyncInitable.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GAsyncResult.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GBufferedInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GBufferedOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GBytesIcon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GCancellable.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GCharsetConverter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GConverter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GCredentials.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDataInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDataOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusActionGroup.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusAuthObserver.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gdbus-codegen.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gdbus-convenience.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gdbus.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusInterface.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusInterfaceSkeleton.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gdbus-lowlevel.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusMenuModel.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusMessage.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusMethodInvocation.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusObject.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusObjectManagerClient.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusObjectManager.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusObjectManagerServer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusObjectProxy.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusObjectSkeleton.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gdbus-org.gtk.GDBus.Example.ObjectManager.Animal.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gdbus-org.gtk.GDBus.Example.ObjectManager.Cat.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusProxy.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDBusServer.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GDrive.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GEmblemedIcon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GEmblem.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileDescriptorBased.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileEnumerator.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFile.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileIcon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileInfo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileIOStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileMonitor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFilenameCompleter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFileOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFilterInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GFilterOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GIcon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GInetAddress.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GInetAddressMask.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GInetSocketAddress.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GInitable.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-D-Bus-Addresses.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-D-Bus-Introspection-Data.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-D-Bus-Utilities.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-Desktop-file-based-GAppInfo.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-Extension-Points.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GActionGroup-exporter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GContentType.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GConverterInputstream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GConverterOutputstream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GDBusError.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GFileAttribute.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GIOError.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GIOScheduler.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GMenuModel-exporter.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-gnetworking.h.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-gpollableutils.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GSettingsSchema-GSettingsSchemaSource.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GWin32InputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GWin32OutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GWin32RegistryKey.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-hierarchy.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GIOModule.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-Owning-Bus-Names.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-querymodules.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GIOStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-TLS-Overview.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-Unix-Mounts.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-Watching-Bus-Names.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/glib-compile-resources.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/glib-compile-schemas.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GListModel.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GListStore.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GLoadableIcon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GMemoryInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GMemoryOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GMenu.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GMenuModel.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GMount.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GMountOperation.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GNetworkAddress.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GNetworkMonitor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GNetworkService.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GNotification.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GPermission.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GPollableInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GPollableOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GPropertyAction.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GProxyAddress.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GProxy.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GProxyResolver.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GRemoteActionGroup.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GResolver.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GResource.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gresource-tool.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSeekable.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSettingsBackend.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSettings.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gsettings-tool.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSimpleActionGroup.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSimpleAction.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSimpleAsyncResult.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSimpleIOStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSimplePermission.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSimpleProxyResolver.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocketAddress.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocketClient.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocketConnectable.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocketConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocketControlMessage.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocket.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocketListener.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSocketService.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSrvTarget.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSubprocess.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GSubprocessLauncher.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTask.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTcpConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTcpWrapperConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTestDBus.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GThemedIcon.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GThreadedSocketService.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsBackend.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsCertificate.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsClientConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsDatabase.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsFileDatabase.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsInteraction.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsPassword.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GTlsServerConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GUnixConnection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GUnixCredentialsMessage.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GUnixFDList.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GUnixFDMessage.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GUnixInputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GUnixOutputStream.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GUnixSocketAddress.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GVfs.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gvfs-overview.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GVolume.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GVolumeMonitor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GZlibCompressor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GZlibDecompressor.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/highlevel-socket.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/icons.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/menu-example.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/menu-model.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/migrating.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/networking.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/permissions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/pt01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/pt02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/registry.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/resolver.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/resources.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/running-gio-apps.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/settings.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/streaming.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/subprocesses.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/testing.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/tls.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/tools.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/types.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/up.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/utils.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/volume_mon.html
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/glib/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/annotation-glossary.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-10.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-12.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-14.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-16.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-18.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-20.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-22.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-24.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-26.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-28.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-2.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-30.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-32.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-34.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-36.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-38.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-40.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-42.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-44.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-46.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-4.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-6.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-8.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-deprecated.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-full.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/deprecated.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/file-name-encodings.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Arrays.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Asynchronous-Queues.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Atomic-Operations.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Automatic-String-Completion.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Balanced-Binary-Trees.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Base64-Encoding.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Basic-Types.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Bookmark-file-parser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-building.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Byte-Order-Macros.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Caches.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-changes.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Character-Set-Conversion.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Commandline-option-parser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-compiling.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-core.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-cross-compiling.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Data-Checksums.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Data-HMACs.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Datasets.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-data-types.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Date-and-Time-Functions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Deprecated-Thread-APIs.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Double-ended-Queues.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Dynamic-Loading-of-Modules.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Error-Reporting.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-File-Utilities.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-fundamentals.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GDateTime.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-gettextize.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Glob-style-pattern-matching.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GTimeZone.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GVariant.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GVariantType.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Hash-Tables.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Hook-Functions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Hostname-Utilities.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-I18N.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-IO-Channels.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Keyed-Data-Lists.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Key-value-file-parser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Lexical-Scanner.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Memory-Slices.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Message-Logging.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Miscellaneous-Macros.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Miscellaneous-Utility-Functions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-N-ary-Trees.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Numerical-Definitions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Perl-compatible-regular-expressions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Pointer-Arrays.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-programming.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Quarks.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Random-Numbers.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-regex-syntax.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Relations-and-Tuples.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-resources.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-running.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Sequences.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Shell-related-Utilities.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Simple-XML-Subset-Parser.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Spawning-Processes.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Standard-Macros.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-String-Chunks.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Strings.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Testing.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-The-Main-Event-Loop.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Thread-Pools.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Threads.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Timers.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Trash-Stacks.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Type-Conversion-Macros.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Unicode-Manipulation.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-UNIX-specific-utilities-and-integration.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-URI-Functions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-utilities.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Version-Information.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Warnings-and-Assertions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Windows-Compatibility-Functions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/gtester.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/gtester-report.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/gvariant-format-strings.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/gvariant-text.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/mainloop-states.gif
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/Sorted_binary_tree_breadth-first_traversal.svg
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/Sorted_binary_tree_inorder.svg
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/Sorted_binary_tree_postorder.svg
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/Sorted_binary_tree_preorder.svg
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/tools.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/up.png
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/gobject/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/annotation-glossary.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-10.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-12.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-14.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-18.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-22.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-24.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-26.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-28.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-2.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-30.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-32.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-34.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-36.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-38.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-40.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-42.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-44.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-46.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-4.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-6.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-8.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-deprecated.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-full.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/ch01s02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/chapter-gobject.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/chapter-gtype.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/chapter-intro.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/chapter-signal.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/GBinding.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/glib-genmarshal.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/glib-mkenums.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/glue.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Closures.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Generic-values.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-GParamSpec.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-memory.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-properties.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-query.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Signals.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Standard-Parameter-and-Value-Types.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Type-Information.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Value-arrays.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gobject-Varargs-Value-Collection.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gtype-conventions.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gtype-instantiable-classed.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/GTypeModule.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gtype-non-instantiable-classed.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/gtype-non-instantiable.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/GTypePlugin.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-gobject-chainup.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-gobject-code.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-gobject-construction.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-gobject-destruction.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-gobject.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-gobject-methods.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-interface.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-interface-implement.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-interface-override.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-interface-prerequisite.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-interface-properties.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/howto-signals.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/left-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/pr01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/pt01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/pt02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/pt03.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/right-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/rn01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/rn02.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/signal.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/tools-ginspector.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/tools-gob.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/tools-gtkdoc.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/tools-refdb.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/tools-vala.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/up-insensitive.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/up.png
 drwxr-xr-x	root/root	usr/share/info/
 -rw-r--r--	root/root	usr/share/info/dir
 -rw-r--r--	root/root	usr/share/info/gdbm.info
@@ -5195,7 +5672,7 @@ lrwxrwxrwx	root/root	usr/share/man/man1/mdc2.1ssl -> dgst.1ssl
 -rw-r--r--	root/root	usr/share/man/man1/mountpoint.1
 -rw-r--r--	root/root	usr/share/man/man1/namei.1
 -rw-r--r--	root/root	usr/share/man/man1/nano.1
--rw-r--r--	root/root	usr/share/man/man1/ncurses5-config.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/ncurses6-config.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/neqn.1
 -rw-r--r--	root/root	usr/share/man/man1/newgrp.1
 -rw-r--r--	root/root	usr/share/man/man1/nisdomainname.1
@@ -6415,6 +6892,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/flushinp_sp.3ncurses.gz -> sp_funcs.3ncu
 lrwxrwxrwx	root/root	usr/share/man/man3/form_cursor.3form.gz -> cursor.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_data.3form.gz -> data.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_driver.3form.gz -> driver.3form.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/form_driver_w.3form.gz -> driver.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_field.3form.gz -> field.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_field_attributes.3form.gz -> field_attributes.3form.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/form_field_buffer.3form.gz -> field_buffer.3form.gz
@@ -6684,7 +7162,9 @@ lrwxrwxrwx	root/root	usr/share/man/man3/getwin_sp.3ncurses.gz -> sp_funcs.3ncurs
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_heartbeat_pong.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_heartbeat_set_timeouts.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hex2bin.3
+-rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_decode2.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_decode.3
+-rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_encode2.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_encode.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hmac.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hmac_deinit.3
@@ -6958,6 +7438,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/getwin_sp.3ncurses.gz -> sp_funcs.3ncurs
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_pk_to_sign.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_prf.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_prf_raw.3
+-rw-r--r--	root/root	usr/share/man/man3/gnutls_prf_rfc5705.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_priority_certificate_type_list.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_priority_cipher_list.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_priority_compression_list.3
@@ -9428,6 +9909,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/ldattach.8
 -rw-r--r--	root/root	usr/share/man/man8/libnss_myhostname.so.2.8
 -rw-r--r--	root/root	usr/share/man/man8/libnss_mymachines.so.2.8
+-rw-r--r--	root/root	usr/share/man/man8/libnss_resolve.so.2.8
 -rw-r--r--	root/root	usr/share/man/man8/linux32.8
 -rw-r--r--	root/root	usr/share/man/man8/linux64.8
 -rw-r--r--	root/root	usr/share/man/man8/logoutd.8
@@ -9458,6 +9940,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/nologin.8
 -rw-r--r--	root/root	usr/share/man/man8/nss-myhostname.8
 -rw-r--r--	root/root	usr/share/man/man8/nss-mymachines.8
+-rw-r--r--	root/root	usr/share/man/man8/nss-resolve.8
 -rw-r--r--	root/root	usr/share/man/man8/partx.8
 -rw-r--r--	root/root	usr/share/man/man8/pidof.8
 -rw-r--r--	root/root	usr/share/man/man8/ping.8.gz
@@ -9513,7 +9996,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-bus-proxyd.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-coredump.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-debug-generator.8
--rw-r--r--	root/root	usr/share/man/man8/systemd-efi-boot-generator.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck-root.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck@.service.8
@@ -11149,6 +11631,8 @@ lrwxrwxrwx	root/root	usr/share/terminfo/n/nsterm-acs-m -> nsterm-m-acs
 lrwxrwxrwx	root/root	usr/share/terminfo/n/nsterm-acs-m-s -> nsterm-m-s-acs
 lrwxrwxrwx	root/root	usr/share/terminfo/n/nsterm-acs-s -> nsterm-s-acs
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-bce
+-rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build326
+-rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build343
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-c
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm+c
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm+c41
@@ -11406,6 +11890,13 @@ lrwxrwxrwx	root/root	usr/share/terminfo/p/pt505 -> ../a/att505
 -rw-r--r--	root/root	usr/share/terminfo/p/pty
 -rw-r--r--	root/root	usr/share/terminfo/p/putty
 -rw-r--r--	root/root	usr/share/terminfo/p/putty-256color
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+esc
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+linux
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+sco
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+vt100
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+vt400
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+xterm
 -rw-r--r--	root/root	usr/share/terminfo/p/putty-sco
 -rw-r--r--	root/root	usr/share/terminfo/p/putty-vt100
 drwxr-xr-x	root/root	usr/share/terminfo/q/
@@ -11515,7 +12006,6 @@ lrwxrwxrwx	root/root	usr/share/terminfo/s/sc415 -> scanset
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.gnome
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.konsole
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.linux
--rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.mlterm
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.mrxvt
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.rxvt
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.xterm-new
@@ -11524,14 +12014,20 @@ lrwxrwxrwx	root/root	usr/share/terminfo/s/sc415 -> scanset
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.gnome
 -rw-r--r--	root/root	usr/share/terminfo/s/screen+italics
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.konsole
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.konsole-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.linux
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.mlterm
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.mlterm-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.mrxvt
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.putty
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.putty-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.rxvt
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-s
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.teraterm
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.vte
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.vte-256color
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-w
+-rw-r--r--	root/root	usr/share/terminfo/s/screen.xterm-256color
 lrwxrwxrwx	root/root	usr/share/terminfo/s/screen.xterm-new -> screen.xterm-xfree86
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.xterm-r6
 -rw-r--r--	root/root	usr/share/terminfo/s/screen.xterm-xfree86
@@ -11677,6 +12173,8 @@ lrwxrwxrwx	root/root	usr/share/terminfo/t/ti916-220-8 -> ti916-8
 -rw-r--r--	root/root	usr/share/terminfo/t/ti931
 -rw-r--r--	root/root	usr/share/terminfo/t/ti_ansi
 lrwxrwxrwx	root/root	usr/share/terminfo/t/tkterm -> tt
+-rw-r--r--	root/root	usr/share/terminfo/t/tmux
+-rw-r--r--	root/root	usr/share/terminfo/t/tmux-256color
 lrwxrwxrwx	root/root	usr/share/terminfo/t/tn1200 -> terminet1200
 lrwxrwxrwx	root/root	usr/share/terminfo/t/tn300 -> terminet1200
 -rw-r--r--	root/root	usr/share/terminfo/t/trs16
@@ -11981,6 +12479,7 @@ lrwxrwxrwx	root/root	usr/share/terminfo/v/vt-61 -> vt61
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-2007
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-2008
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-2012
+-rw-r--r--	root/root	usr/share/terminfo/v/vte-2014
 -rw-r--r--	root/root	usr/share/terminfo/v/vte-256color
 -rw-r--r--	root/root	usr/share/terminfo/v/vte+pcfkeys
 lrwxrwxrwx	root/root	usr/share/terminfo/v/vtnt -> ../m/ms-vt100-color

@@ -120,9 +120,9 @@ lrwxrwxrwx	root/root	usr/lib/libsystemd-journal.so -> libsystemd-journal.so.0.11
 -rwxr-xr-x	root/root	usr/lib/libsystemd-login.so.0.9.3
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so.0 -> libsystemd-login.so.0.9.3
 lrwxrwxrwx	root/root	usr/lib/libsystemd-login.so -> libsystemd-login.so.0.9.3
--rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.10.0
-lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.10.0
-lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0.10.0
+-rwxr-xr-x	root/root	usr/lib/libsystemd.so.0.10.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so.0 -> libsystemd.so.0.10.2
+lrwxrwxrwx	root/root	usr/lib/libsystemd.so -> libsystemd.so.0.10.2
 -rwxr-xr-x	root/root	usr/lib/libudev.la
 -rwxr-xr-x	root/root	usr/lib/libudev.so.1.6.4
 lrwxrwxrwx	root/root	usr/lib/libudev.so.1 -> libudev.so.1.6.4
@@ -959,8 +959,10 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/kernel-install.8
 -rw-r--r--	root/root	usr/share/man/man8/libnss_myhostname.so.2.8
 -rw-r--r--	root/root	usr/share/man/man8/libnss_mymachines.so.2.8
+-rw-r--r--	root/root	usr/share/man/man8/libnss_resolve.so.2.8
 -rw-r--r--	root/root	usr/share/man/man8/nss-myhostname.8
 -rw-r--r--	root/root	usr/share/man/man8/nss-mymachines.8
+-rw-r--r--	root/root	usr/share/man/man8/nss-resolve.8
 -rw-r--r--	root/root	usr/share/man/man8/poweroff.8
 -rw-r--r--	root/root	usr/share/man/man8/reboot.8
 -rw-r--r--	root/root	usr/share/man/man8/runlevel.8
@@ -979,7 +981,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/systemd-bus-proxyd.socket.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-coredump.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-debug-generator.8
--rw-r--r--	root/root	usr/share/man/man8/systemd-efi-boot-generator.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck-root.service.8
 -rw-r--r--	root/root	usr/share/man/man8/systemd-fsck@.service.8

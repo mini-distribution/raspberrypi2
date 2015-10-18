@@ -28,9 +28,9 @@ drwxr-xr-x	root/root	usr/include/gnutls/
 -rw-r--r--	root/root	usr/include/gnutls/x509.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libgnutls.la
--rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.2.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.2.0
-lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.2.0
+-rwxr-xr-x	root/root	usr/lib/libgnutls.so.30.3.0
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so.30 -> libgnutls.so.30.3.0
+lrwxrwxrwx	root/root	usr/lib/libgnutls.so -> libgnutls.so.30.3.0
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.la
 -rwxr-xr-x	root/root	usr/lib/libgnutlsxx.so.28.1.0
 lrwxrwxrwx	root/root	usr/lib/libgnutlsxx.so.28 -> libgnutlsxx.so.28.1.0
@@ -255,7 +255,9 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_heartbeat_pong.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_heartbeat_set_timeouts.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hex2bin.3
+-rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_decode2.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_decode.3
+-rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_encode2.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hex_encode.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hmac.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_hmac_deinit.3
@@ -529,6 +531,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_pk_to_sign.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_prf.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_prf_raw.3
+-rw-r--r--	root/root	usr/share/man/man3/gnutls_prf_rfc5705.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_priority_certificate_type_list.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_priority_cipher_list.3
 -rw-r--r--	root/root	usr/share/man/man3/gnutls_priority_compression_list.3
