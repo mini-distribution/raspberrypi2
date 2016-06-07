@@ -1,24 +1,12 @@
 [submodule "buildfiles/cross/cross-core"]
 	path = buildfiles/cross/cross-core
 	url = https://github.com/mini-distribution/cross-core.git
-#	url = git@github.com:mini-distribution/cross-core.git
 [submodule "buildfiles/cross/cross-opt"]
 	path = buildfiles/cross/cross-opt
 	url = https://github.com/mini-distribution/cross-opt.git
-#	url = git@github.com:mini-distribution/cross-opt.git
-[submodule "buildfiles/cross/cross-freedesktop"]
-	path = buildfiles/cross/cross-freedesktop
-	url = https://github.com/mini-distribution/cross-freedesktop.git
-#	url = git@github.com:mini-distribution/cross-freedesktop.git
 [submodule "buildfiles/cross/cross-extra"]
 	path = buildfiles/cross/cross-extra
 	url = https://github.com/mini-distribution/cross-extra.git
-#	url = git@github.com:mini-distribution/cross-extra.git
-[submodule "buildfiles/native/native-freedesktop"]
-	path = buildfiles/native/native-freedesktop
-	url = https://github.com/mini-distribution/native-freedesktop.git
-#	url = git@github.com:mini-distribution/native-freedesktop.git
-[submodule "buildfiles/cross/cross-qt"]
-	path = buildfiles/cross/cross-qt
-	url = https://github.com/mini-distribution/cross-qt.git
-#	url = git@github.com:mini-distribution/cross-qt.git
+[submodule "buildfiles/native/native-opt"]
+	path = buildfiles/native/native-opt
+	url = https://github.com/mini-distribution/native-opt.git

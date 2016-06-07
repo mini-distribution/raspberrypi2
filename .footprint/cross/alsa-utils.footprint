@@ -1,8 +1,10 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/aconnect
+-rwxr-xr-x	root/root	usr/bin/alsabat
 -rwxr-xr-x	root/root	usr/bin/alsaloop
 -rwxr-xr-x	root/root	usr/bin/alsamixer
+-rwxr-xr-x	root/root	usr/bin/alsatplg
 -rwxr-xr-x	root/root	usr/bin/alsaucm
 -rwxr-xr-x	root/root	usr/bin/amidi
 -rwxr-xr-x	root/root	usr/bin/amixer
@@ -19,16 +21,14 @@ drwxr-xr-x	root/root	usr/lib/systemd/
 drwxr-xr-x	root/root	usr/lib/systemd/system/
 -rw-r--r--	root/root	usr/lib/systemd/system/alsa-restore.service
 -rw-r--r--	root/root	usr/lib/systemd/system/alsa-state.service
--rw-r--r--	root/root	usr/lib/systemd/system/alsa-store.service
 drwxr-xr-x	root/root	usr/lib/systemd/system/basic.target.wants/
 lrwxrwxrwx	root/root	usr/lib/systemd/system/basic.target.wants/alsa-restore.service -> ../alsa-restore.service
 lrwxrwxrwx	root/root	usr/lib/systemd/system/basic.target.wants/alsa-state.service -> ../alsa-state.service
-drwxr-xr-x	root/root	usr/lib/systemd/system/shutdown.target.wants/
-lrwxrwxrwx	root/root	usr/lib/systemd/system/shutdown.target.wants/alsa-store.service -> ../alsa-store.service
 drwxr-xr-x	root/root	usr/lib/udev/
 drwxr-xr-x	root/root	usr/lib/udev/rules.d/
 -rw-r--r--	root/root	usr/lib/udev/rules.d/90-alsa-restore.rules
 drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/alsabat-test.sh
 -rwxr-xr-x	root/root	usr/sbin/alsactl
 -rwxr-xr-x	root/root	usr/sbin/alsa-info.sh
 drwxr-xr-x	root/root	usr/share/
@@ -46,7 +46,9 @@ drwxr-xr-x	root/root	usr/share/alsa/speaker-test/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/aconnect.1
+-rw-r--r--	root/root	usr/share/man/man1/alsabat.1
 -rw-r--r--	root/root	usr/share/man/man1/alsactl.1
+-rw-r--r--	root/root	usr/share/man/man1/alsa-info.sh.1
 -rw-r--r--	root/root	usr/share/man/man1/alsaloop.1
 -rw-r--r--	root/root	usr/share/man/man1/alsamixer.1
 -rw-r--r--	root/root	usr/share/man/man1/amidi.1
