@@ -7,7 +7,6 @@ release=1
 options=(nostrip)
 depends=(core
          linux
-         net-tools
          traceroute
          alsa-utils
          connman
