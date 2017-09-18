@@ -378,7 +378,6 @@ lrwxrwxrwx	root/root	usr/lib/systemd/system/sysinit.target.wants/systemd-update-
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-machined.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-machine-id-commit.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-modules-load.service
--rw-r--r--	root/root	usr/lib/systemd/system/systemd-nspawn@.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-poweroff.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-quotacheck.service
 -rw-r--r--	root/root	usr/lib/systemd/system/systemd-random-seed.service
