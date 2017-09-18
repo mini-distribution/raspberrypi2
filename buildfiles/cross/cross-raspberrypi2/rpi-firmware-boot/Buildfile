@@ -3,7 +3,7 @@
 # License: BSD
 
 name=rpi-firmware-boot
-version=git464ce4fc
+version=giteb04fcf96b
 release=1
 source=(http://mirror.mini-distribution.io/raspberrypi/$name-$version.tar.xz
         cmdline.txt config.txt)
