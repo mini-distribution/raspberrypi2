@@ -42,6 +42,7 @@ drwxr-xr-x	root/root	usr/include/nettle/
 -rw-r--r--	root/root	usr/include/nettle/md4.h
 -rw-r--r--	root/root	usr/include/nettle/md5-compat.h
 -rw-r--r--	root/root	usr/include/nettle/md5.h
+-rw-r--r--	root/root	usr/include/nettle/memops.h
 -rw-r--r--	root/root	usr/include/nettle/memxor.h
 -rw-r--r--	root/root	usr/include/nettle/nettle-meta.h
 -rw-r--r--	root/root	usr/include/nettle/nettle-stdint.h
@@ -65,12 +66,12 @@ drwxr-xr-x	root/root	usr/include/nettle/
 -rw-r--r--	root/root	usr/include/nettle/version.h
 -rw-r--r--	root/root	usr/include/nettle/yarrow.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libhogweed.so.4.2
-lrwxrwxrwx	root/root	usr/lib/libhogweed.so.4 -> libhogweed.so.4.2
-lrwxrwxrwx	root/root	usr/lib/libhogweed.so -> libhogweed.so.4.2
--rw-r--r--	root/root	usr/lib/libnettle.so.6.2
-lrwxrwxrwx	root/root	usr/lib/libnettle.so.6 -> libnettle.so.6.2
-lrwxrwxrwx	root/root	usr/lib/libnettle.so -> libnettle.so.6.2
+-rw-r--r--	root/root	usr/lib/libhogweed.so.4.3
+lrwxrwxrwx	root/root	usr/lib/libhogweed.so.4 -> libhogweed.so.4.3
+lrwxrwxrwx	root/root	usr/lib/libhogweed.so -> libhogweed.so.4.3
+-rw-r--r--	root/root	usr/lib/libnettle.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libnettle.so.6 -> libnettle.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libnettle.so -> libnettle.so.6.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/hogweed.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/nettle.pc

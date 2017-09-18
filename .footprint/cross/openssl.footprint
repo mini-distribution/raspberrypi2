@@ -547,6 +547,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/CRYPTO_THREADID_get_callback.3ssl -> thr
 lrwxrwxrwx	root/root	usr/share/man/man3/CRYPTO_THREADID_hash.3ssl -> threads.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/CRYPTO_THREADID_set_callback.3ssl -> threads.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_ASN1_OBJECT.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_AutoPrivateKey.3ssl -> d2i_PrivateKey.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_CMS_ContentInfo.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_DHparams.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSAparams.3ssl -> d2i_DSAPublicKey.3ssl
@@ -564,6 +565,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/d2i_Netscape_RSA.3ssl -> d2i_RSAPublicKe
 -rw-r--r--	root/root	usr/share/man/man3/d2i_PKCS8PrivateKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_PKCS8PrivateKey_bio.3ssl -> d2i_PKCS8PrivateKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_PKCS8PrivateKey_fp.3ssl -> d2i_PKCS8PrivateKey.3ssl
+-rw-r--r--	root/root	usr/share/man/man3/d2i_PrivateKey.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_Private_key.3ssl -> d2i_PrivateKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_RSAPrivateKey.3ssl -> d2i_RSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_RSA_PUBKEY.3ssl -> d2i_RSAPublicKey.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/d2i_RSAPublicKey.3ssl
@@ -823,10 +826,14 @@ lrwxrwxrwx	root/root	usr/share/man/man3/ERR_reason_error_string.3ssl -> ERR_erro
 lrwxrwxrwx	root/root	usr/share/man/man3/ERR_remove_thread_state.3ssl -> ERR_remove_state.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/ERR_set_mark.3ssl
 -rw-r--r--	root/root	usr/share/man/man3/evp.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_128_cbc_hmac_sha1.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_128_cbc_hmac_sha256.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_128_ccm.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_128_gcm.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_192_ccm.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_192_gcm.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_256_cbc_hmac_sha1.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_256_cbc_hmac_sha256.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_256_ccm.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_aes_256_gcm.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_bf_cbc.3ssl -> EVP_EncryptInit.3ssl
@@ -1014,6 +1021,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_ecb.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc2_ofb.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc4.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc4_40.3ssl -> EVP_EncryptInit.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc4_hmac_md5.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc5_32_12_16_cbc.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc5_32_12_16_cfb.3ssl -> EVP_EncryptInit.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_rc5_32_12_16_ecb.3ssl -> EVP_EncryptInit.3ssl
@@ -1064,6 +1072,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/i2d_PKCS8PrivateKey_bio.3ssl -> d2i_PKCS
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_PKCS8PrivateKey_fp.3ssl -> d2i_PKCS8PrivateKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_PKCS8PrivateKey_nid_bio.3ssl -> d2i_PKCS8PrivateKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_PKCS8PrivateKey_nid_fp.3ssl -> d2i_PKCS8PrivateKey.3ssl
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_PrivateKey.3ssl -> d2i_PrivateKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_RSAPrivateKey.3ssl -> d2i_RSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_RSA_PUBKEY.3ssl -> d2i_RSAPublicKey.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_RSAPublicKey.3ssl -> d2i_RSAPublicKey.3ssl

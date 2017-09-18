@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cal
+-rwxr-xr-x	root/root	usr/bin/chmem
 -rwxr-xr-x	root/root	usr/bin/chrt
 -rwxr-xr-x	root/root	usr/bin/col
 -rwxr-xr-x	root/root	usr/bin/colcrt
@@ -8,6 +9,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/column
 -rwxr-xr-x	root/root	usr/bin/dmesg
 -rwxr-xr-x	root/root	usr/bin/eject
+-rwxr-xr-x	root/root	usr/bin/fincore
 -rwxr-xr-x	root/root	usr/bin/findmnt
 -rwxr-xr-x	root/root	usr/bin/flock
 -rwxr-xr-x	root/root	usr/bin/getopt
@@ -29,6 +31,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/lsipc
 -rwxr-xr-x	root/root	usr/bin/lslocks
 -rwxr-xr-x	root/root	usr/bin/lslogins
+-rwxr-xr-x	root/root	usr/bin/lsmem
 -rwxr-xr-x	root/root	usr/bin/lsns
 -rwxr-xr-x	root/root	usr/bin/mcookie
 -rwxr-xr-x	root/root	usr/bin/mesg
@@ -37,7 +40,6 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/mountpoint
 -rwxr-xr-x	root/root	usr/bin/namei
 -rwxr-xr-x	root/root	usr/bin/nsenter
--rwxr-xr-x	root/root	usr/bin/pg
 -rwxr-xr-x	root/root	usr/bin/prlimit
 -rwxr-xr-x	root/root	usr/bin/rename
 -rwxr-xr-x	root/root	usr/bin/renice
@@ -47,7 +49,6 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/setarch
 -rwxr-xr-x	root/root	usr/bin/setsid
 -rwxr-xr-x	root/root	usr/bin/setterm
--rwxr-xr-x	root/root	usr/bin/tailf
 -rwxr-xr-x	root/root	usr/bin/taskset
 -rwxr-xr-x	root/root	usr/bin/ul
 -rwsr-xr-x	root/root	usr/bin/umount
@@ -148,6 +149,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cal
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cfdisk
 -rw-r--r--	root/root	usr/share/bash-completion/completions/chcpu
+-rw-r--r--	root/root	usr/share/bash-completion/completions/chmem
 -rw-r--r--	root/root	usr/share/bash-completion/completions/chrt
 -rw-r--r--	root/root	usr/share/bash-completion/completions/col
 -rw-r--r--	root/root	usr/share/bash-completion/completions/colcrt
@@ -159,6 +161,8 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/eject
 -rw-r--r--	root/root	usr/share/bash-completion/completions/fdformat
 -rw-r--r--	root/root	usr/share/bash-completion/completions/fdisk
+-rw-r--r--	root/root	usr/share/bash-completion/completions/fincore
+-rw-r--r--	root/root	usr/share/bash-completion/completions/findfs
 -rw-r--r--	root/root	usr/share/bash-completion/completions/findmnt
 -rw-r--r--	root/root	usr/share/bash-completion/completions/flock
 -rw-r--r--	root/root	usr/share/bash-completion/completions/fsck
@@ -184,6 +188,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lsipc
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lslocks
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lslogins
+-rw-r--r--	root/root	usr/share/bash-completion/completions/lsmem
 -rw-r--r--	root/root	usr/share/bash-completion/completions/lsns
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mcookie
 -rw-r--r--	root/root	usr/share/bash-completion/completions/mesg
@@ -198,7 +203,6 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/namei
 -rw-r--r--	root/root	usr/share/bash-completion/completions/nsenter
 -rw-r--r--	root/root	usr/share/bash-completion/completions/partx
--rw-r--r--	root/root	usr/share/bash-completion/completions/pg
 -rw-r--r--	root/root	usr/share/bash-completion/completions/pivot_root
 -rw-r--r--	root/root	usr/share/bash-completion/completions/prlimit
 -rw-r--r--	root/root	usr/share/bash-completion/completions/raw
@@ -217,7 +221,6 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/swaplabel
 -rw-r--r--	root/root	usr/share/bash-completion/completions/swapoff
 -rw-r--r--	root/root	usr/share/bash-completion/completions/swapon
--rw-r--r--	root/root	usr/share/bash-completion/completions/tailf
 -rw-r--r--	root/root	usr/share/bash-completion/completions/taskset
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ul
 -rw-r--r--	root/root	usr/share/bash-completion/completions/umount
@@ -245,6 +248,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/column.1
 -rw-r--r--	root/root	usr/share/man/man1/dmesg.1
 -rw-r--r--	root/root	usr/share/man/man1/eject.1
+-rw-r--r--	root/root	usr/share/man/man1/fincore.1
 -rw-r--r--	root/root	usr/share/man/man1/flock.1
 -rw-r--r--	root/root	usr/share/man/man1/getopt.1
 -rw-r--r--	root/root	usr/share/man/man1/hexdump.1
@@ -260,13 +264,13 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/lscpu.1
 -rw-r--r--	root/root	usr/share/man/man1/lsipc.1
 -rw-r--r--	root/root	usr/share/man/man1/lslogins.1
+-rw-r--r--	root/root	usr/share/man/man1/lsmem.1
 -rw-r--r--	root/root	usr/share/man/man1/mcookie.1
 -rw-r--r--	root/root	usr/share/man/man1/mesg.1
 -rw-r--r--	root/root	usr/share/man/man1/more.1
 -rw-r--r--	root/root	usr/share/man/man1/mountpoint.1
 -rw-r--r--	root/root	usr/share/man/man1/namei.1
 -rw-r--r--	root/root	usr/share/man/man1/nsenter.1
--rw-r--r--	root/root	usr/share/man/man1/pg.1
 -rw-r--r--	root/root	usr/share/man/man1/prlimit.1
 -rw-r--r--	root/root	usr/share/man/man1/rename.1
 -rw-r--r--	root/root	usr/share/man/man1/renice.1
@@ -275,7 +279,6 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/scriptreplay.1
 -rw-r--r--	root/root	usr/share/man/man1/setsid.1
 -rw-r--r--	root/root	usr/share/man/man1/setterm.1
--rw-r--r--	root/root	usr/share/man/man1/tailf.1
 -rw-r--r--	root/root	usr/share/man/man1/taskset.1
 -rw-r--r--	root/root	usr/share/man/man1/ul.1
 -rw-r--r--	root/root	usr/share/man/man1/unshare.1
@@ -308,6 +311,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/blockdev.8
 -rw-r--r--	root/root	usr/share/man/man8/cfdisk.8
 -rw-r--r--	root/root	usr/share/man/man8/chcpu.8
+-rw-r--r--	root/root	usr/share/man/man8/chmem.8
 -rw-r--r--	root/root	usr/share/man/man8/ctrlaltdel.8
 -rw-r--r--	root/root	usr/share/man/man8/delpart.8
 -rw-r--r--	root/root	usr/share/man/man8/fdformat.8

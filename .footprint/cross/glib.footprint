@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gapplication
 -rwxr-xr-x	root/root	usr/bin/gdbus
 -rwxr-xr-x	root/root	usr/bin/gdbus-codegen
+-rwxr-xr-x	root/root	usr/bin/gio
 -rwxr-xr-x	root/root	usr/bin/gio-querymodules
 -rwxr-xr-x	root/root	usr/bin/glib-compile-resources
 -rwxr-xr-x	root/root	usr/bin/glib-compile-schemas
@@ -253,6 +254,7 @@ drwxr-xr-x	root/root	usr/include/glib-2.0/glib/deprecated/
 -rw-r--r--	root/root	usr/include/glib-2.0/glib/gunicode.h
 -rw-r--r--	root/root	usr/include/glib-2.0/glib/gurifuncs.h
 -rw-r--r--	root/root	usr/include/glib-2.0/glib/gutils.h
+-rw-r--r--	root/root	usr/include/glib-2.0/glib/guuid.h
 -rw-r--r--	root/root	usr/include/glib-2.0/glib/gvariant.h
 -rw-r--r--	root/root	usr/include/glib-2.0/glib/gvarianttype.h
 -rw-r--r--	root/root	usr/include/glib-2.0/glib/gversion.h
@@ -290,25 +292,25 @@ drwxr-xr-x	root/root	usr/lib/glib-2.0/
 drwxr-xr-x	root/root	usr/lib/glib-2.0/include/
 -rw-r--r--	root/root	usr/lib/glib-2.0/include/glibconfig.h
 -rwxr-xr-x	root/root	usr/lib/libgio-2.0.la
--rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.4800.1
+-rwxr-xr-x	root/root	usr/lib/libgio-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so.0 -> libgio-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgio-2.0.so -> libgio-2.0.so.0.5200.3
 -rwxr-xr-x	root/root	usr/lib/libglib-2.0.la
--rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.4800.1
+-rwxr-xr-x	root/root	usr/lib/libglib-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so.0 -> libglib-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libglib-2.0.so -> libglib-2.0.so.0.5200.3
 -rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.la
--rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.4800.1
+-rwxr-xr-x	root/root	usr/lib/libgmodule-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgmodule-2.0.so -> libgmodule-2.0.so.0.5200.3
 -rwxr-xr-x	root/root	usr/lib/libgobject-2.0.la
--rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.4800.1
+-rwxr-xr-x	root/root	usr/lib/libgobject-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so.0 -> libgobject-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgobject-2.0.so -> libgobject-2.0.so.0.5200.3
 -rwxr-xr-x	root/root	usr/lib/libgthread-2.0.la
--rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.4800.1
-lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.4800.1
+-rwxr-xr-x	root/root	usr/lib/libgthread-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so.0 -> libgthread-2.0.so.0.5200.3
+lrwxrwxrwx	root/root	usr/lib/libgthread-2.0.so -> libgthread-2.0.so.0.5200.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gio-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gio-unix-2.0.pc
@@ -339,27 +341,12 @@ drwxr-xr-x	root/root	usr/share/glib-2.0/gettext/po/
 -rw-r--r--	root/root	usr/share/glib-2.0/gettext/po/Makefile.in.in
 drwxr-xr-x	root/root	usr/share/glib-2.0/schemas/
 -rw-r--r--	root/root	usr/share/glib-2.0/schemas/gschema.dtd
+drwxr-xr-x	root/root	usr/share/glib-2.0/valgrind/
+-rw-r--r--	root/root	usr/share/glib-2.0/valgrind/glib.supp
 drwxr-xr-x	root/root	usr/share/gtk-doc/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/gio/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/annotation-glossary.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-18.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-20.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-22.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-24.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-26.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-28.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-30.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-32.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-34.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-36.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-38.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-40.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-42.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-44.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-46.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-2-48.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-deprecated.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/api-index-full.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/application.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/async.html
@@ -475,6 +462,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/gio/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GWin32OutputStream.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-GWin32RegistryKey.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-hierarchy.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/GIOModule.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-Owning-Bus-Names.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/gio-querymodules.html
@@ -591,31 +579,6 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/gio/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gio/volume_mon.html
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/glib/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/annotation-glossary.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-10.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-12.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-14.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-16.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-18.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-20.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-22.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-24.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-26.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-28.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-2.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-30.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-32.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-34.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-36.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-38.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-40.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-42.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-44.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-46.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-48.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-4.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-6.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-2-8.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-deprecated.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/api-index-full.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/deprecated.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/file-name-encodings.png
@@ -655,6 +618,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/glib/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-gettextize.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Glob-style-pattern-matching.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GTimeZone.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GUuid.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GVariant.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-GVariantType.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/glib-Hash-Tables.html
@@ -726,28 +690,6 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/glib/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/glib/up.png
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/gobject/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/annotation-glossary.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-10.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-12.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-14.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-18.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-22.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-24.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-26.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-28.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-2.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-30.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-32.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-34.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-36.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-38.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-40.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-42.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-44.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-46.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-4.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-6.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-2-8.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-deprecated.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/api-index-full.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/ch01s02.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gobject/chapter-gobject.html
@@ -817,6 +759,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/gapplication.1
 -rw-r--r--	root/root	usr/share/man/man1/gdbus.1
 -rw-r--r--	root/root	usr/share/man/man1/gdbus-codegen.1
+-rw-r--r--	root/root	usr/share/man/man1/gio.1
 -rw-r--r--	root/root	usr/share/man/man1/gio-querymodules.1
 -rw-r--r--	root/root	usr/share/man/man1/glib-compile-resources.1
 -rw-r--r--	root/root	usr/share/man/man1/glib-compile-schemas.1

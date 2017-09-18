@@ -31,9 +31,9 @@ lrwxrwxrwx	root/root	usr/lib/libipq.so -> libipq.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so.0 -> libiptc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libiptc.so -> libiptc.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libxtables.la
--rwxr-xr-x	root/root	usr/lib/libxtables.so.11.0.0
-lrwxrwxrwx	root/root	usr/lib/libxtables.so.11 -> libxtables.so.11.0.0
-lrwxrwxrwx	root/root	usr/lib/libxtables.so -> libxtables.so.11.0.0
+-rwxr-xr-x	root/root	usr/lib/libxtables.so.12.0.0
+lrwxrwxrwx	root/root	usr/lib/libxtables.so.12 -> libxtables.so.12.0.0
+lrwxrwxrwx	root/root	usr/lib/libxtables.so -> libxtables.so.12.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libip4tc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libip6tc.pc
@@ -163,14 +163,18 @@ lrwxrwxrwx	root/root	usr/sbin/ebtables-compat -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables-compat-restore -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables-compat-save -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables-compat -> xtables-compat-multi
+lrwxrwxrwx	root/root	usr/sbin/ip6tables-restore-translate -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables-restore -> xtables-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables-save -> xtables-multi
+lrwxrwxrwx	root/root	usr/sbin/ip6tables-translate -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables -> xtables-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-compat-restore -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-compat-save -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-compat -> xtables-compat-multi
+lrwxrwxrwx	root/root	usr/sbin/iptables-restore-translate -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-restore -> xtables-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-save -> xtables-multi
+lrwxrwxrwx	root/root	usr/sbin/iptables-translate -> xtables-compat-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables -> xtables-multi
 -rwxr-xr-x	root/root	usr/sbin/xtables-compat-multi
 -rwxr-xr-x	root/root	usr/sbin/xtables-multi

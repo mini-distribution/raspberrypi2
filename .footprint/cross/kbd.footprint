@@ -138,6 +138,7 @@ lrwxrwxrwx	root/root	usr/share/kbd/consolefonts/default.gz -> default8x9.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat0-12.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat0-14.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat0-16.psfu.gz
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/lat0-sun16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat1-08.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat1-10.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat1-12.psfu.gz
@@ -149,6 +150,7 @@ lrwxrwxrwx	root/root	usr/share/kbd/consolefonts/default.gz -> default8x9.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat2-14.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat2-16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat2a-16.psfu.gz
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/lat2-sun16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/Lat2-Terminus16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat4-08.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/lat4-10.psfu.gz
@@ -195,6 +197,8 @@ lrwxrwxrwx	root/root	usr/share/kbd/consolefonts/default.gz -> default8x9.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatArCyrHeb-16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatArCyrHeb-16+.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatArCyrHeb-19.psfu.gz
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/latarcyrheb-sun16.psfu.gz
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/latarcyrheb-sun32.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatGrkCyr-8x16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/LatKaCyrHeb-14.psfu.gz
@@ -315,6 +319,9 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/azerty/
 drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/bepo/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/bepo/fr-bepo-latin9.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/bepo/fr-bepo.map.gz
+drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/carpalx/
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/carpalx/carpalx-full.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/carpalx/carpalx.map.gz
 drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/colemak/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/colemak/en-latin9.map.gz
 drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/dvorak/
@@ -322,8 +329,10 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/dvorak/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-ca-fr.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-es.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-fr.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-la.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-l.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-programmer.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-r.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-ru.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/dvorak/dvorak-sv-a1.map.gz

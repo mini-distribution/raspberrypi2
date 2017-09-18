@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/nano/
 -rw-r--r--	root/root	usr/share/doc/nano/faq.html
 -rw-r--r--	root/root	usr/share/doc/nano/nano.1.html
+-rw-r--r--	root/root	usr/share/doc/nano/nano.html
 -rw-r--r--	root/root	usr/share/doc/nano/nanorc.5.html
 -rw-r--r--	root/root	usr/share/doc/nano/rnano.1.html
 drwxr-xr-x	root/root	usr/share/man/
@@ -38,6 +39,7 @@ drwxr-xr-x	root/root	usr/share/nano/
 -rw-r--r--	root/root	usr/share/nano/man.nanorc
 -rw-r--r--	root/root	usr/share/nano/mgp.nanorc
 -rw-r--r--	root/root	usr/share/nano/mutt.nanorc
+-rw-r--r--	root/root	usr/share/nano/nanohelp.nanorc
 -rw-r--r--	root/root	usr/share/nano/nanorc.nanorc
 -rw-r--r--	root/root	usr/share/nano/nftables.nanorc
 -rw-r--r--	root/root	usr/share/nano/objc.nanorc
@@ -50,6 +52,7 @@ drwxr-xr-x	root/root	usr/share/nano/
 -rw-r--r--	root/root	usr/share/nano/pov.nanorc
 -rw-r--r--	root/root	usr/share/nano/python.nanorc
 -rw-r--r--	root/root	usr/share/nano/ruby.nanorc
+-rw-r--r--	root/root	usr/share/nano/rust.nanorc
 -rw-r--r--	root/root	usr/share/nano/sh.nanorc
 -rw-r--r--	root/root	usr/share/nano/spec.nanorc
 -rw-r--r--	root/root	usr/share/nano/tcl.nanorc
