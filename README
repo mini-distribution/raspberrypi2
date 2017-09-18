@@ -6,8 +6,6 @@ About:
 
    A basic GNU/Linux distribution for the Raspberry Pi 2
 
-   *** WORK IN PROGRESS - THERE ARE STILL SOME BOOT ISSUES TO BE FIXED ***
-
 Main features:
 
    * Arm Cortex A7, Neon, FPU optimized toolchain
@@ -31,6 +29,7 @@ Quick build guide:
    $ buildgear build rpi-firmware-boot
 
 Prebuilt images:
+
     To be done.
 
 Login details:
@@ -39,11 +38,12 @@ Login details:
     Password: root
 
 Installation:
+
     To be done.
 
 Build system requirements:
 
-   Tested on Ubuntu 15.04 (64-bit x86) with the following additional packages
+   Tested on Ubuntu 17.04 (64-bit x86) with the following additional packages
    installed:
 
    $ sudo apt-get install unzip groff bison flex gperf texinfo xsltproc \
