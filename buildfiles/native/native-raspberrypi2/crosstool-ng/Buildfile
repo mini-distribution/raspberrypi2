@@ -2,11 +2,10 @@
 # URL: http://www.crosstool-ng.org
 
 name=crosstool-ng
-version=1.20.0
+version=1.23.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.xz
         disable-LD_LIBRARY_PATH-check.patch
-        cc-gcc-add-gcc-4.9.2.patch
         $HOST.config)
 options=(nostrip)
 
@@ -14,7 +13,6 @@ build() {
    cd $name-$version
 
    patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
-   patch -p1 -i $SRC/cc-gcc-add-gcc-4.9.2.patch
 
    ./configure --enable-local
    make -j $JOBS
@@ -23,7 +21,7 @@ build() {
    cp $SRC/$HOST.config .config
    sed -i /^CT_LOCAL_TARBALLS_DIR=/s:=.*:=\"$SOURCE\": .config
    sed -i /^CT_PREFIX_DIR=/s:=.*:=\"$PKG\": .config
-#   sed -i /^CT_KERNEL_LINUX_CUSTOM_LOCATION=/s:=.*:=\"$SYSROOT/usr/src/linux\": .config
+#  sed -i /^CT_KERNEL_LINUX_CUSTOM_LOCATION=/s:=.*:=\"$SYSROOT/usr/src/linux\": .config
 
    ./ct-ng build
 
@@ -40,13 +38,6 @@ build() {
    # Make gnu/stubs.h a soft link to gnu/stubs-hard.h
    rm $PKG/$HOST/sysroot/usr/include/gnu/stubs.h
    ln -s stubs-hard.h $PKG/$HOST/sysroot/usr/include/gnu/stubs.h
-
-   # Fix .la files
-   sed -i -e "/libdir/s:=.*:='$CROSS_SYSROOT/lib':" \
-       $PKG/$HOST/sysroot/lib/libstdc++.la \
-       $PKG/$HOST/sysroot/lib/libsupc++.la \
-       $PKG/$HOST/sysroot/lib/libitm.la \
-       $PKG/$HOST/sysroot/lib/libatomic.la
 }
 
 check() {
