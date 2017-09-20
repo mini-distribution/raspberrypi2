@@ -21,6 +21,10 @@ Main builds:
    linux             - Linux kernel
    rpi-firmware-boot - Bootloader firmware
 
+   Note: Bulding the filesystem automatically builds the linux kernel because
+   the kernel image is contained within the filesystem. Hence no explicit build
+   of the linux kernel is required.
+
 Quick build guide:
 
    $ git clone --recursive git://github.com/mini-distribution/raspberrypi2.git
@@ -30,7 +34,7 @@ Quick build guide:
 
 Prebuilt images:
 
-    To be done.
+    http://mini-distribution.io/prebuilds/raspberrypi2
 
 Login details:
 
