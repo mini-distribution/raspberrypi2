@@ -37,6 +37,9 @@ if [ "$BUILD_TYPE" = "native" ]; then
    export PKG_CONFIG_LIBDIR+=":`pkg-config --variable pc_path pkg-config`"
 fi
 
+# Export config directory manually (to be automatically exported in the future)
+export CFG=$PWD/config
+
 # Helper functions
 
 fix_la_files()
