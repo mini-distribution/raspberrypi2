@@ -58,7 +58,7 @@ Build system requirements:
                           gettext u-boot-tools libglib2.0-dev intltool \
                           libxml2-utils docbook-xml cmake g++ pixz lzop \
                           u-boot-tools docbook-xml ruby docbook-xsl \
-                          python3 python3-pip ninja-build meson
+                          python3 python3-pip ninja-build meson autopoint
 
 
    Also requires reconfiguring "/bin/sh" to use bash:
