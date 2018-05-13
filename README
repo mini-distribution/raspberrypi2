@@ -27,6 +27,10 @@ Main builds:
 
 Quick build guide:
 
+   Note:
+   Before building, please make sure that you have all required Ubuntu packages
+   installed. See section "Build system requirements".
+
    $ git clone --recursive git://github.com/mini-distribution/raspberrypi2.git
    $ cd raspberrypi2
    $ buildgear build fs
@@ -54,7 +58,8 @@ Build system requirements:
                           libtool-bin libncurses5-dev gawk libexpat1-dev \
                           gettext u-boot-tools libglib2.0-dev intltool \
                           libxml2-utils docbook-xml cmake g++ pixz lzop \
-                          u-boot-tools docbook-xml ruby
+                          u-boot-tools docbook-xml ruby docbook-xsl \
+                          python3 python3-pip ninja-build meson
 
 
    Also requires reconfiguring "/bin/sh" to use bash:
