@@ -6,6 +6,7 @@ version=1.23.0
 release=1
 source=(http://crosstool-ng.org/download/$name/$name-$version.tar.xz
         disable-LD_LIBRARY_PATH-check.patch
+        gcc-6.3.0-ubsan-fix.patch
         $HOST.config)
 options=(nostrip)
 
@@ -13,6 +14,7 @@ build() {
    cd $name-$version
 
    patch -p1 -i $SRC/disable-LD_LIBRARY_PATH-check.patch
+   patch -p1 -i $SRC/gcc-6.3.0-ubsan-fix.patch
 
    ./configure --enable-local
    make -j $JOBS
