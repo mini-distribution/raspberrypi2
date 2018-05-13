@@ -22,14 +22,13 @@ Main builds:
    rpi-firmware-boot - Bootloader firmware
 
    Note: Bulding the filesystem automatically builds the linux kernel because
-   the kernel image is contained within the filesystem. Hence no explicit build
-   of the linux kernel is required.
+         the kernel image is contained within the filesystem. Hence no explicit
+         build of the linux kernel is required.
 
 Quick build guide:
 
-   Note:
-   Before building, please make sure that you have all required Ubuntu packages
-   installed. See section "Build system requirements".
+   Note: Before building, please make sure that you have all required Ubuntu
+         packages installed. See section "Build system requirements".
 
    $ git clone --recursive git://github.com/mini-distribution/raspberrypi2.git
    $ cd raspberrypi2
@@ -51,7 +50,7 @@ Installation:
 
 Build system requirements:
 
-   Tested on Ubuntu 17.04 (64-bit x86) with the following additional packages
+   Tested on Ubuntu 18.04 (64-bit x86) with the following additional packages
    installed:
 
    $ sudo apt-get install unzip groff bison flex gperf texinfo xsltproc \
